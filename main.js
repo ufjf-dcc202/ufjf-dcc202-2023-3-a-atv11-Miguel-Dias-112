@@ -15,7 +15,7 @@ function addElementosDaLista(){
     atualizarItemDeLista()
 }
 function limparElementosDaLista(){
-    limparLista()
+    limpaLista()
     atualizarItemDeLista()
 }
 function atualizarItemDeLista(){
