@@ -4,7 +4,11 @@ const pEntrada = document.querySelector('#entrada')
 const olSaida = document.querySelector('#itens')
 const btnAdicionar = document.querySelector('#adicionar')
 const btnLimpar = document.querySelector('#limpar')
-
+btnLimpar.addEventListener('click',limparElementosDaLista)
+function limparElementosDaLista(){
+    limparLista()
+    atualizarItemDeLista()
+}
 function atualizarItemDeLista(){
     const lista = getLista()
     olSaida.innerHTML=""
@@ -17,6 +21,4 @@ function atualizarItemDeLista(){
         olSaida.appendChild(li)
     }
 }
-atualizarItemDeLista()
-limparLista()
 atualizarItemDeLista()
