@@ -6,7 +6,7 @@ const lista = [
     return lista
 }
 export function limpaLista(){
-    lista.splice(0,3)
+    lista.splice(0)
     return lista
 }
 export function adicionarNaLista(novoItem){
