@@ -9,3 +9,6 @@ export function limpaLista(){
     lista.splice(0,3)
     return lista
 }
+export function adicionarNaLista(novoItem){
+    lista.push(novoItem)
+}
