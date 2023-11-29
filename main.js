@@ -1,5 +1,5 @@
 //main.js
-import { getLista } from "./lista.js"
+import { getLista, limparLista } from "./lista.js"
 const pEntrada = document.querySelector('#entrada')
 const olSaida = document.querySelector('#itens')
 const btnAdicionar = document.querySelector('#adicionar')
@@ -17,4 +17,6 @@ function atualizarItemDeLista(){
         olSaida.appendChild(li)
     }
 }
+atualizarItemDeLista()
+limparLista()
 atualizarItemDeLista()
