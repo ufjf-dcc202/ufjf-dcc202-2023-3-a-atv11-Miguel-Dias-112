@@ -5,4 +5,13 @@ const olSaida = document.querySelector('#itens')
 const btnAdicionar = document.querySelector('#adicionar')
 const btnLimpar = document.querySelector('#limpar')
 
-olSaida.innerHTML="<h1>boo<h1>"
+olSaida.innerHTML=""
+function atualizarItemDeLista(){
+    const lista = getLista()
+    for (let i = 0; i < array.length; i++) {
+        const item = lista[i]
+        const li  = document.createElement('li')
+        li.textContent = item
+    }
+}
+atualizarItemDeLista()
