@@ -1,5 +1,5 @@
 //main.js
-import { getLista, limpaLista ,adicionarNaLista} from "./lista.js"
+import { getLista, limpaLista ,adicionaNaLista} from "./lista.js"
 const pEntrada = document.querySelector('#entrada')
 const olSaida = document.querySelector('#itens')
 const btnAdicionar = document.querySelector('#adicionar')
@@ -8,11 +8,17 @@ const btnLimpar = document.querySelector('#limpar')
 
 btnLimpar.addEventListener('click',limparElementosDaLista)
 btnAdicionar.addEventListener('click',addElementosDaLista)
-
-function addElementosDaLista(){
+function criaElementoNalist(){
     const texto = pEntrada.textContent
     adicionarNaLista(texto)
     atualizarItemDeLista()
+}
+function addElementosDaLista(){
+    const texto = pEntrada.textContent
+    adicionaNaLista(texto)
+    atualizarItemDeLista()
+    pEntrada.textContent=''
+    pEntrada.focus()
 }
 function limparElementosDaLista(){
     limpaLista()

@@ -7,8 +7,10 @@ const lista = [
 }
 export function limpaLista(){
     lista.splice(0)
-    return lista
 }
-export function adicionarNaLista(novoItem){
+export function removeDaLista(pos){
+    lista.splice(pos,1)
+}
+export function adicionaNaLista(novoItem){
     lista.push(novoItem)
 }
